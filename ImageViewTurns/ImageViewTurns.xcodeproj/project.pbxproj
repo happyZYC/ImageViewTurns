@@ -15,6 +15,8 @@
 		14C5D4501ED43D9900FAFE74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14C5D44E1ED43D9900FAFE74 /* LaunchScreen.storyboard */; };
 		14C5D45B1ED43D9A00FAFE74 /* ImageViewTurnsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C5D45A1ED43D9A00FAFE74 /* ImageViewTurnsTests.m */; };
 		14C5D4661ED43D9A00FAFE74 /* ImageViewTurnsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C5D4651ED43D9A00FAFE74 /* ImageViewTurnsUITests.m */; };
+		14C5D4761ED4433700FAFE74 /* ImageTurnsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C5D4741ED4433700FAFE74 /* ImageTurnsView.m */; };
+		14C5D47A1ED4443700FAFE74 /* JQPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 14C5D4791ED4443700FAFE74 /* JQPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		14C5D4611ED43D9A00FAFE74 /* ImageViewTurnsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageViewTurnsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C5D4651ED43D9A00FAFE74 /* ImageViewTurnsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewTurnsUITests.m; sourceTree = "<group>"; };
 		14C5D4671ED43D9A00FAFE74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14C5D4741ED4433700FAFE74 /* ImageTurnsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageTurnsView.m; sourceTree = "<group>"; };
+		14C5D4751ED4433700FAFE74 /* ImageTurnsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageTurnsView.h; sourceTree = "<group>"; };
+		14C5D4781ED4443700FAFE74 /* JQPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JQPageControl.h; sourceTree = "<group>"; };
+		14C5D4791ED4443700FAFE74 /* JQPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JQPageControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		14C5D43F1ED43D9900FAFE74 /* ImageViewTurns */ = {
 			isa = PBXGroup;
 			children = (
+				14C5D4731ED4432F00FAFE74 /* ImageTurns */,
 				14C5D4431ED43D9900FAFE74 /* AppDelegate.h */,
 				14C5D4441ED43D9900FAFE74 /* AppDelegate.m */,
 				14C5D4461ED43D9900FAFE74 /* ViewController.h */,
@@ -138,6 +145,25 @@
 				14C5D4671ED43D9A00FAFE74 /* Info.plist */,
 			);
 			path = ImageViewTurnsUITests;
+			sourceTree = "<group>";
+		};
+		14C5D4731ED4432F00FAFE74 /* ImageTurns */ = {
+			isa = PBXGroup;
+			children = (
+				14C5D4751ED4433700FAFE74 /* ImageTurnsView.h */,
+				14C5D4741ED4433700FAFE74 /* ImageTurnsView.m */,
+				14C5D4771ED4443700FAFE74 /* CustomPageControl */,
+			);
+			path = ImageTurns;
+			sourceTree = "<group>";
+		};
+		14C5D4771ED4443700FAFE74 /* CustomPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				14C5D4781ED4443700FAFE74 /* JQPageControl.h */,
+				14C5D4791ED4443700FAFE74 /* JQPageControl.m */,
+			);
+			path = CustomPageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14C5D4481ED43D9900FAFE74 /* ViewController.m in Sources */,
+				14C5D47A1ED4443700FAFE74 /* JQPageControl.m in Sources */,
+				14C5D4761ED4433700FAFE74 /* ImageTurnsView.m in Sources */,
 				14C5D4451ED43D9900FAFE74 /* AppDelegate.m in Sources */,
 				14C5D4421ED43D9900FAFE74 /* main.m in Sources */,
 			);
@@ -509,6 +537,7 @@
 				14C5D46C1ED43D9A00FAFE74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14C5D46D1ED43D9A00FAFE74 /* Build configuration list for PBXNativeTarget "ImageViewTurnsTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +546,7 @@
 				14C5D46F1ED43D9A00FAFE74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		14C5D4701ED43D9A00FAFE74 /* Build configuration list for PBXNativeTarget "ImageViewTurnsUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +555,7 @@
 				14C5D4721ED43D9A00FAFE74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

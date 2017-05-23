@@ -7,16 +7,22 @@
 //
 
 #import "ViewController.h"
+#import "ImageTurnsView.h"
+@interface ViewController ()<ImageTurnsViewDelegate>
 
-@interface ViewController ()
+@property (nonatomic, strong) ImageTurnsView *turnsImageView;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    ImageTurnsView *turns = [ImageTurnsView turnsViewWithImages:@[@"test1",@"test2",@"test3",@"test4"] andFrame:CGRectMake(0, 0, self.view.bounds.size.width, 300)];
+    turns.center = self.view.center;
+    [self.view addSubview:turns];
 }
 
 
