@@ -25,6 +25,20 @@
     [self.view addSubview:turns];
 }
 
+- (void)setUpImageView:(UIImageView *)imageView withImageUrlStr:(NSString *)urlStr
+{
+    NSLog(@"加载网路图片");
+}
+- (void)selectImageInView:(ImageTurnsView *)turnsView atIndex:(NSInteger)index andObj:(id)obj
+{
+    
+}
+- (void)turnsView:(ImageTurnsView *)turnsView currentIndex:(NSInteger)index
+{
+    
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
